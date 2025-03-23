@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE VIDA</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CCSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ocultar elementos desde el tercero */
+        #myList li:nth-child(n+4) {
+            display: none;
+        }
+
+        /* Mostrar elementos cuando el checkbox está marcado */
+        #toggleCheckbox:checked~ul#myList li {
+            display: list-item;
+        }
+
+        /* Estilo para el botón "Ver más" */
+        .toggle-label {
+            cursor: pointer;
+            color: #0c0920;
+            text-decoration: underline;
+        }
+
+        /* Ocultar el checkbox */
+        #toggleCheckbox {
+            display: none;
+        }
+
+        /* Cambiar el texto del botón cuando está marcado */
+        #toggleCheckbox:checked~.toggle-label::after {
+            content: " Ver menos";
+        }
+
+        #toggleCheckbox:not(:checked)~.toggle-label::after {
+            content: " Ver más...";
+        }
+    
+        /* Ocultar elementos desde el tercero */
+        #myList1 li:nth-child(n+4) {
+            display: none;
+        }
+
+        /* Mostrar elementos cuando el checkbox está marcado */
+        #toggleCheckbox1:checked~ul#myList1 li {
+            display: list-item;
+        }
+
+        /* Estilo para el botón "Ver más" */
+        .toggle-label {
+            cursor: pointer;
+            color: #0c0920;
+            text-decoration: underline;
+        }
+
+        /* Ocultar el checkbox */
+        #toggleCheckbox1 {
+            display: none;
+        }
+
+        /* Cambiar el texto del botón cuando está marcado */
+        #toggleCheckbox1:checked~.toggle-label::after {
+            content: " Ver menos";
+        }
+
+        #toggleCheckbox1:not(:checked)~.toggle-label::after {
+            content: " Ver más...";
+        }
+    
+        /* Ocultar elementos desde el tercero */
+        #myList2 li:nth-child(n+4) {
+            display: none;
+        }
+
+        /* Mostrar elementos cuando el checkbox está marcado */
+        #toggleCheckbox2:checked~ul#myList2 li {
+            display: list-item;
+        }
+
+        /* Estilo para el botón "Ver más" */
+        .toggle-label {
+            cursor: pointer;
+            color: #0c0920;
+            text-decoration: underline;
+        }
+
+        /* Ocultar el checkbox */
+        #toggleCheckbox2 {
+            display: none;
+        }
+
+        /* Cambiar el texto del botón cuando está marcado */
+        #toggleCheckbox2:checked~.toggle-label::after {
+            content: " Ver menos";
+        }
+
+        #toggleCheckbox2:not(:checked)~.toggle-label::after {
+            content: " Ver más...";
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" container-lg my-5 ">
+
+        <div class="row shadow- lg rounded-4 overflow-hidden">
+
+            <!-- columna izquierda -->
+            <div class="col-md-4 bg-primary text-white p-4">
+                <header class="text-center mb-4">
+
+                    <img src="img/img.jpeg" class="img-fluid rounded-circle border border-4 border-white mb-3"
+                        alt="foto perfil">
+
+                    <h1 class="fw-bold mt-2 ">BRAHIAM BEDOYA</h1>
+                    <h2 class="h5 text-light">Desarollador web</h2>
+                </header>
+
+                <section class="mb-4">
+                    <h5 class="fw-bold"> <i class="fas fa-address-card me-2"></i> Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb2">
+
+                            <a id="link_what"
+                                href="https://web.whatsapp.com/send/?phone=573135857848&text=hola%20Brahiam,%20como%20esta%20el%20día%20de%20hoy "
+                                target="_blank"><i class="fas fa-phone me-2"></i>
+                                +57 3135857848</a>
+                        </li>
+                        <li class="mb2">
+                            <i class="fas fa-envelope me-2"></i> brahiambedoya1805@gmail.com
+                        </li>
+                        <li class="mb2">
+                            <i class="fas fa-map-marker-alt me-2"></i> Aguadas-Caldas
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-white" href="https://github.com/Antonio-bbf" target="_blank">
+                                <i class="fab fa-github me-2"></i>
+                                githubcom/AntonioBrahiam
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+
+                </section>
+
+                <section class="mb-4">
+                    <h3 class="h5 fw-bold mb-3"><i class="fas fa-code me-2"></i>Habilidades</h3>
+                    <div class="skill mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>HTML/CSS</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-white" role="progressbar" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    <!-- Repetir para otras habilidades -->
+                </section>
+
+            </div>
+            <!-- columna derecha  -->
+            <div class="col-md-8 bg-light p-4">
+                <section class="mb-5">
+                    <h4 class="fw-bold text-primary mb-4">
+                        <i class="fas fa-briefcase me-1"></i>
+                        Experiencia Laboral
+                    </h4>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Programacion De Software</h4>
+
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2025 - Actualidad
+                            </h5>
+                            <h6 class="text-primary">
+                                Empresa Tecnologica XYZ
+                            </h6>
+                            <input type="checkbox" id="toggleCheckbox">
+                            <ul id="myList">
+                                <li> <u>Liderazgo de equipo de desarrollo</u> </li>
+                                <li>Implementación de arquitectura SAS</li>
+                                <li>Optimización de rendimiento</li>
+                                <li>Liderazgo de equipo de desarrollo</li>
+                              
+                            </ul>
+
+                            <label for="toggleCheckbox" class="toggle-label"></label>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-5">
+                    <h4 class="fw-bold text-primary mb-4">
+                        <i class="fas fa-graduation-cap me-1"></i>
+                        Educación
+                    </h4>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Tecnico En Programacion De Software </h4>
+
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2020 - 2022
+                            </h5>
+                            <h6 class="text-primary">
+                                I.E Roberto Pelaez
+                            </h6>
+                            <input type="checkbox" id="toggleCheckbox1">
+                            <ul id="myList1">
+                                <li> <u>CSS</u> </li>
+                                <li>HTML</li>
+                                <li>PHP</li>
+                                <li>MYSQL</li>
+                            </ul>
+
+                            <label for="toggleCheckbox1" class="toggle-label"></label>
+                        </div>
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Tecnico Profecional En Programacion Web</h4>
+
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                2024 - Actualidad
+                            </h5>
+                            <h6 class="text-primary">
+                                Universidad De Caldas
+                            </h6>
+                            <input type="checkbox" id="toggleCheckbox2">
+                            <ul id="myList2">
+                                <li> <u>TECNOLOGIA DIGITAL</u> </li>
+                                <li>PROGRAMACION CREATIVA I</li>
+                                <li>INGLES TECNICO I</li>
+                            </ul>
+
+                            <label for="toggleCheckbox2" class="toggle-label"></label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
